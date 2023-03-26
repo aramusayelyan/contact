@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <form id="form">
+      <div class="field">
+        <label for="from_name">Անուն</label>
+        <input type="text" name="from_name" id="from_name">
+      </div>
+      <div class="field">
+        <label for="reply_to">Էլ․ Հասցե</label>
+        <input type="text" name="reply_to" id="reply_to">
+      </div>
+      <div class="field">
+        <label for="message">Հաղորթագրություն</label>
+        <input type="text" name="message" id="message">
+      </div>
+
+    
+      <input type="submit" id="button" value="Ուղարկել" >
+    </form>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+      emailjs.init('az3LXRObWM4KAv2ge')
+    </script>
+
+  </body>
+</html>
